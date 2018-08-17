@@ -1,6 +1,6 @@
 import os
 base_dir = os.path.abspath(os.path.dirname(__name__))
-postgres_local_base = 'postgresql://your_username:your_username@localhost/'
+postgres_local_base = 'postgresql://postgres:postgres@localhost/'
 database_name = 'flaskapi'
 
 
