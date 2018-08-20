@@ -1,17 +1,16 @@
 from app import db
 
 
-class Provider(db.Model):
+class User(db.Model):
     __tablename__ = 'providers'
 
     id = db.Column(db.Integer, primary_key = True, autoincrement=True)
     name = db.Column(db.String(50), nullable= False)
-    name_ids = db.Column(db.Integer, nullable = False)
+    address = db.Column(db.String(50), nullable = False)
 
-    def __init__(self, name, name_id):
-        # self.id = id
+    def __init__(self, name, address):
         self.name = name
-        self.name_ids = name_id
+        self.address = address
     
     def show(self):
         db.session.query.all()
