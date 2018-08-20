@@ -4,7 +4,7 @@ from flask import make_response,request, jsonify, abort
 
 #Import model here
 
-providers = Blueprint('gracenote', __name__, url_prefix='/api/gravenote')
+gracenote = Blueprint('gracenote', __name__, url_prefix='/api/gracenote')
 
 
 @gracenote.route('/')

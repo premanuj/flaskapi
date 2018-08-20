@@ -19,5 +19,11 @@ migrate = Migrate(app, db)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
-from app.provider.controllers import providers as provide_module
-app.register_blueprint(provide_module, )
+from app.gracenote.controllers import gracenote as gracenote_module
+app.register_blueprint(gracenote_module, )
+
+from app.auth.controllers import auth as auth_module
+app.register_blueprint(gracenote_module, )
+
+from app.notification.controllers import notification as notification_module
+app.register_blueprint(notification_module, )

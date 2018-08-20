@@ -4,7 +4,7 @@ from flask import make_response,request, jsonify, abort
 
 #Import model here
 
-providers = Blueprint('auth', __name__, url_prefix='/api/auth')
+auth = Blueprint('auth', __name__, url_prefix='/api/auth')
 
 
 @auth.route('/')
