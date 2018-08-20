@@ -6,6 +6,7 @@ from flask import make_response,request, jsonify, abort
 
 notification = Blueprint('notification', __name__, url_prefix='/api/notification')
 
+#Define notification endpoints here
 
 @notification.route('/')
 def index():

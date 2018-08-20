@@ -6,6 +6,7 @@ from flask import make_response,request, jsonify, abort
 
 auth = Blueprint('auth', __name__, url_prefix='/api/auth')
 
+#Define auth endpoints here
 
 @auth.route('/')
 def index():
